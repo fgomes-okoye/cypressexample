@@ -1,0 +1,19 @@
+{
+  "name": "cypressexample",
+  "version": "1.0.0",
+  "description": "Cypress Example Automation",
+  "main": "index.js",
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:run": "cypress run"
+  },
+  "keywords": [
+    "Cypress",
+    "cucumber"
+  ],
+  "author": "Francis Gomes-Okoye",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^6.1.0"
+  }
+}
