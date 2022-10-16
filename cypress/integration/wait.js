@@ -1,15 +1,15 @@
 /// <reference types="cypress" />
 
-describe('Validte My First Test Suite using Wait', () => {
+describe('Validate My First Test Suite using Wait', () => {
   it('Visits Codenbox automation site', () => {
     cy.visit('https://codenboxautomationlab.com/practice/');
     cy.url().should('include', 'codenbox');
-    cy.wait(3000)
+    cy.wait(3000);
   });
 
   it.skip('should pause the execution here', () => {
-    cy.pause()
-  })
+    cy.pause();
+  });
 
   it('should check for the correct element on the page', () => {
     cy.get('.page-title').should('be.visible');
