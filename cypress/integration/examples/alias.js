@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-describe('My Alias Test Suite', () => {
+describe('My Test Suite', () => {
   it('Visits Codenbox automation site', () => {
     cy.visit('https://codenboxautomationlab.com/wp-login.php');
     cy.wait(3000);

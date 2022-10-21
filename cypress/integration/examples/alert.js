@@ -1,14 +1,14 @@
 /// <reference types="cypress" />
 
-describe('My First Test Suite', () => {
-  it('visits codenbox automation site', () => {
+describe('My Test Suite', () => {
+  it('should visit codenbox automation site', () => {
     cy.visit('https://codenboxautomationlab.com/practice/')
     //should check that the url is correct
     cy.url().should('include', 'codenbox')
     cy.wait(3000)
   })
 
-  it('verify alert window', () => {
+  it('should verify alert window', () => {
     cy.get('#alertbtn').click()
     cy.on('window:alert', str => {
       expect(str).to.equal(
@@ -16,7 +16,7 @@ describe('My First Test Suite', () => {
       )
     })
   })
-  it('verify alert window', () => {
+  it('should verify alert window', () => {
     cy.get('#confirmbtn').click()
     cy.on('window:confirm', str => {
       expect(str).to.equal(

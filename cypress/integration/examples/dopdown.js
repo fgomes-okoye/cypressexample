@@ -1,7 +1,7 @@
 /// <reference types="cypress" />
 
-describe('My First Test Suite', () => {
-  it('visits Codenbox automation site', () => {
+describe('My Test Suite', () => {
+  it('should visit Codenbox automation site', () => {
     cy.visit('https://codenboxautomationlab.com/practice/')
 
     //static dropdown

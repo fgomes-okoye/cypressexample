@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-describe('My Checkbox Test Suite', () => {
+describe('My Test Suite', () => {
   it('should be able to tick the checkbox', () => {
     cy.visit('https://codenboxautomationlab.com/practice/');
     cy.get('input#checkBoxOption1')

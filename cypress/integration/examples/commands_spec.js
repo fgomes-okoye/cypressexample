@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-describe('My Commands Test Suite', () => {
+describe('My Test Suite', () => {
   it('should login to the application using custom command', () => {
     cy.visit('https://codenboxautomationlab.com/wp-login.php')
 

@@ -1,8 +1,11 @@
 /// <reference types="cypress" />
 
-describe('My First Test Suite', () => {
+describe('My Test Suite', () => {
   it('visits codenbox automation site', () => {
-    cy.visit('https://codenboxautomationlab.com/practice/')
+    // cy.visit('https://codenboxautomationlab.com/practice/')
+
+    cy.visit(Cypress.env('url') + '/practice/')
+
     //should check that the url is correct
     cy.url().should('include', 'codenbox')
   })

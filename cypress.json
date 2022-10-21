@@ -1,6 +1,10 @@
 {
   "watchForFileChanges": false,
   "chromeWebSecurity": false,
-  "viewportHeight": 1000,
-  "viewportWidth": 1500
+  "viewportHeight": 900,
+  "viewportWidth": 1500,
+
+  "env": {
+    "url": "https://codenboxautomationlab.com/"
+  }
 }

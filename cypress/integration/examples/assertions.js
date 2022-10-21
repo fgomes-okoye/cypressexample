@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-describe('My First Test Suite', () => {
+describe('My Test Suite', () => {
   it('visits codenbox automation site', () => {
     cy.visit('https://codenboxautomationlab.com/practice/')
     //should check that the url is correct
