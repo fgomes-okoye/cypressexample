@@ -1,12 +1,12 @@
 /// <reference types="cypress" />
 import PracticePage from './pageObjects/PracticePage'
 
-describe('my Test Suite', function () {
+describe('My Test Suite', function () {
   before(function () {
     PracticePage.loadHomePage()
   })
 
-  it('should be about the practice page', function () {
+  it('should perform actions on the practice page', function () {
     PracticePage.getTitle()
     PracticePage.getDropDownOption()
     PracticePage.searchCountry()
