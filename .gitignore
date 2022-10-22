@@ -2,6 +2,5 @@
 .vscode\
 \dist
 \cypress\screenshots
-\cypress.json
 \cypress\videos
 reports-multihtml
