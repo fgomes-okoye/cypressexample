@@ -17,7 +17,13 @@
  */
 module.exports = (on, config) => {
   require('cypress-mochawesome-reporter/plugin')(on)
+
   on('task', {
     failed: require('cypress-failed-log/src/failed')(),
   })
+}
+
+const { downloadFile } = require('cypress-downloadfile/lib/addPlugin')
+module.exports = (on, config) => {
+  on('task', { downloadFile })
 }

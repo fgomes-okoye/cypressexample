@@ -4,6 +4,7 @@
   "viewportHeight": 900,
   "viewportWidth": 1400,
   "pageLoadTimeout": 7000,
+  "projectId": "d17e63",
 
   "reporter": "cypress-mochawesome-reporter",
 
