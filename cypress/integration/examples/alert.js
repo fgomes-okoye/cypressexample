@@ -19,9 +19,7 @@ describe('My Test Suite', () => {
   it('should verify alert window', () => {
     cy.get('#confirmbtn').click()
     cy.on('window:confirm', str => {
-      expect(str).to.equal(
-        'Hello , Are you sure you want to confirm?'
-      )
+      expect(str).to.equal('Hello , Are you sure you want to confirm?')
     })
   })
 })

@@ -14,13 +14,15 @@
 // ***********************************************************
 
 // Import commands.js using ES2015 syntax:
-import './commands';
+import './commands'
+import 'cypress-mochawesome-reporter/register'
+require('cypress-failed-log')
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
 beforeEach(() => {
   Cypress.on('uncaught:exception', () => {
-    return false;
-  });
-//   cy.visit('/');
-});
+    return false
+  })
+  //   cy.visit('/');
+})

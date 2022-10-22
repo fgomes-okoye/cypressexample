@@ -2,7 +2,10 @@
   "watchForFileChanges": false,
   "chromeWebSecurity": false,
   "viewportHeight": 900,
-  "viewportWidth": 1500,
+  "viewportWidth": 1400,
+  "pageLoadTimeout": 7000,
+
+  "reporter": "cypress-mochawesome-reporter",
 
   "env": {
     "url": "https://codenboxautomationlab.com/"
