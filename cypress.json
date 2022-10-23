@@ -2,7 +2,7 @@
   "watchForFileChanges": false,
   "viewportHeight": 770,
   "viewportWidth": 1000,
-  "pageLoadTimeout": 6000,
+  "pageLoadTimeout": 10000,
   "chromeWebSecurity": false,
   "projectId": "d17e63",
 

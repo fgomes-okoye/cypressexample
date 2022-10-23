@@ -21,7 +21,7 @@ class PracticePage {
 
   static searchCountry() {
     cy.get('#autocomplete').type('can')
-    cy.get('.ui-menu-item').each(($el, index, $list) => {
+    cy.get('.ui-menu-item div').each(($el, index, $list) => {
       if ($el.text() === 'canada') {
         cy.wrap($el).click()
       }
