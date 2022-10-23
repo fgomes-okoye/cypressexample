@@ -7,7 +7,7 @@ describe('My Test Suite', function () {
     cy.contains('Selenium Automation').click({ force: true })
     cy.go('back') //clicks on the back button
 
-    cy.get('h3[aria-label="Write heading…"] span')
+    cy.get('#post-2 > div > h3 > span')
       .invoke('text')
       .then(textOfElement => {
         expect(textOfElement.trim()).to.eq('Welcome to CodenBox AutomationLab')

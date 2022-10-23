@@ -1,0 +1,124 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-10-23T14:57:22.063Z",
+    "end": "2022-10-23T14:57:45.436Z",
+    "duration": 23373,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "37a0fbd9-be9f-4f51-b9dd-c65f07969779",
+      "title": "",
+      "fullFile": "cypress/integration/examples/condenboxTest.js",
+      "file": "cypress/integration/examples/condenboxTest.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "1d77d691-2b7f-4d11-8473-ee90b4ef371f",
+          "title": "My Test Suite",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should perform actions on the practice page",
+              "fullTitle": "My Test Suite should perform actions on the practice page",
+              "timedOut": null,
+              "duration": 8351,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_PracticePage.default.getTitle();\n_PracticePage.default.getDropDownOption();\n_PracticePage.default.searchCountry();\n_PracticePage.default.clickOnRegistrationForm();",
+              "err": {},
+              "uuid": "a71ac284-c5bd-46fb-9596-d9469b223bfc",
+              "parentUUID": "1d77d691-2b7f-4d11-8473-ee90b4ef371f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should perform actions on the registration form",
+              "fullTitle": "My Test Suite should perform actions on the registration form",
+              "timedOut": null,
+              "duration": 13679,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_RegistrationPage.default.getFirstName('Francis');\n_RegistrationPage.default.getLastName('Drake');\n_RegistrationPage.default.getEmail('francis@test.com');\n_RegistrationPage.default.selectDropdDown();\n_RegistrationPage.default.selectCheckbox();\n_RegistrationPage.default.submitFormBtn();",
+              "err": {},
+              "uuid": "640b4c22-2982-4567-9029-663905e4b9d7",
+              "parentUUID": "1d77d691-2b7f-4d11-8473-ee90b4ef371f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "a71ac284-c5bd-46fb-9596-d9469b223bfc",
+            "640b4c22-2982-4567-9029-663905e4b9d7"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 22030,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

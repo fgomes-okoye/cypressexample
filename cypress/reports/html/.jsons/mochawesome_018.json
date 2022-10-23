@@ -1,0 +1,124 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-10-23T14:34:23.508Z",
+    "end": "2022-10-23T14:34:33.413Z",
+    "duration": 9905,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "370f98f0-0bc6-4e4d-b4b7-c088043c3459",
+      "title": "",
+      "fullFile": "cypress/integration/examples/text.js",
+      "file": "cypress/integration/examples/text.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "f55e22a0-1c3f-409c-a611-bbcc8d6f2f3c",
+          "title": "My Test Suite",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should get text using text method option1",
+              "fullTitle": "My Test Suite should get text using text method option1",
+              "timedOut": null,
+              "duration": 3092,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://codenboxautomationlab.com/practice/');\ncy.get('.page-title').invoke('text').then(text1 => {\n  expect(text1).to.eq('Automation Practice');\n});",
+              "err": {},
+              "uuid": "8049df91-e3f9-4e84-9316-dfeff2a92a50",
+              "parentUUID": "f55e22a0-1c3f-409c-a611-bbcc8d6f2f3c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should get text using text method option2",
+              "fullTitle": "My Test Suite should get text using text method option2",
+              "timedOut": null,
+              "duration": 4340,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://codenboxautomationlab.com/practice/');\ncy.get('.page-title').then(function (text2) {\n  cy.log(text2.text());\n});",
+              "err": {},
+              "uuid": "122fc2cb-81af-434f-b27e-6563978adcda",
+              "parentUUID": "f55e22a0-1c3f-409c-a611-bbcc8d6f2f3c",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "8049df91-e3f9-4e84-9316-dfeff2a92a50",
+            "122fc2cb-81af-434f-b27e-6563978adcda"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 7432,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

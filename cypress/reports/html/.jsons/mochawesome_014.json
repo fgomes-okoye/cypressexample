@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-10-23T14:33:14.894Z",
+    "end": "2022-10-23T14:33:27.351Z",
+    "duration": 12457,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "82cdd14a-7942-4fa7-a8d2-583a27deaf24",
+      "title": "",
+      "fullFile": "cypress/integration/examples/pageScroll.js",
+      "file": "cypress/integration/examples/pageScroll.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "43fc235d-09ba-4ede-abee-f30ebb582876",
+          "title": "My Test Suite",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should scroll up and down",
+              "fullTitle": "My Test Suite should scroll up and down",
+              "timedOut": null,
+              "duration": 9792,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// cy.visit('https://codenboxautomationlab.com/')\ncy.visit(Cypress.env('url'));\ncy.wait(3000);\ncy.contains('Contact Us').scrollIntoView(); //cy.wait(3000)\ncy.get('.block-editor-rich-text__editable > span').scrollIntoView();",
+              "err": {},
+              "uuid": "a3553365-c466-48a4-8cdc-1f7d7f01133f",
+              "parentUUID": "43fc235d-09ba-4ede-abee-f30ebb582876",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "a3553365-c466-48a4-8cdc-1f7d7f01133f"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 9792,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

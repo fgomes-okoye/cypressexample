@@ -1,0 +1,129 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 1,
+    "pending": 0,
+    "failures": 1,
+    "start": "2022-10-23T14:30:53.655Z",
+    "end": "2022-10-23T14:31:10.999Z",
+    "duration": 17344,
+    "testsRegistered": 2,
+    "passPercent": 50,
+    "pendingPercent": 0,
+    "other": 1,
+    "hasOther": true,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "c98be1fa-8f48-4fcb-b81f-0a9564e4367c",
+      "title": "",
+      "fullFile": "cypress/integration/examples/childTab.js",
+      "file": "cypress/integration/examples/childTab.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "0aabfc8c-2e17-49d6-a229-3656ac9164c4",
+          "title": "My Test Suite",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should visit codenbox automation site",
+              "fullTitle": "My Test Suite should visit codenbox automation site",
+              "timedOut": null,
+              "duration": 3936,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://codenboxautomationlab.com/practice/'); //should check that the url is correct\ncy.url().should('include', 'codenbox');",
+              "err": {},
+              "uuid": "84132f68-f089-43e6-83c1-002afa4f5d23",
+              "parentUUID": "0aabfc8c-2e17-49d6-a229-3656ac9164c4",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should invoke the child tab",
+              "fullTitle": "My Test Suite should invoke the child tab",
+              "timedOut": null,
+              "duration": 383,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      {\n        \"title\": \"Failed screenshot\",\n        \"value\": \"\\\\examples\\\\childTab.js\\\\My Test Suite -- should invoke the child tab (failed).png\"\n      },\n      {\n        \"title\": \"Failed screenshot\",\n        \"value\": \"\\\\examples\\\\childTab.js\\\\should invoke the child tab -- after each hook onFailed (failed).png\"\n      }\n    ]\n  ]\n}",
+              "code": "cy.get('#opentab').invoke('removeAttr', 'target').click({\n  force: true\n});",
+              "err": {
+                "message": "CypressError: `cy.task('failed')` failed with the following error:\n\nThe task 'failed' was not handled in the plugins file. The following tasks are registered: downloadFile\n\nFix this in your plugins file here:\nC:\\my-project\\automation\\CypressExample\\cypress\\plugins\\index.js\n\nhttps://on.cypress.io/api/task\n\nBecause this error occurred during a `after each` hook we are skipping all of the remaining tests.",
+                "estack": "CypressError: `cy.task('failed')` failed with the following error:\n\nThe task 'failed' was not handled in the plugins file. The following tasks are registered: downloadFile\n\nFix this in your plugins file here:\nC:\\my-project\\automation\\CypressExample\\cypress\\plugins\\index.js\n\nhttps://on.cypress.io/api/task\n\nBecause this error occurred during a `after each` hook we are skipping all of the remaining tests.\n    at https://codenboxautomationlab.com/__cypress/runner/cypress_runner.js:158936:80\n    at tryCatcher (https://codenboxautomationlab.com/__cypress/runner/cypress_runner.js:13212:23)\n    at Promise._settlePromiseFromHandler (https://codenboxautomationlab.com/__cypress/runner/cypress_runner.js:11147:31)\n    at Promise._settlePromise (https://codenboxautomationlab.com/__cypress/runner/cypress_runner.js:11204:18)\n    at Promise._settlePromise0 (https://codenboxautomationlab.com/__cypress/runner/cypress_runner.js:11249:10)\n    at Promise._settlePromises (https://codenboxautomationlab.com/__cypress/runner/cypress_runner.js:11325:18)\n    at _drainQueueStep (https://codenboxautomationlab.com/__cypress/runner/cypress_runner.js:7919:12)\n    at _drainQueue (https://codenboxautomationlab.com/__cypress/runner/cypress_runner.js:7912:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://codenboxautomationlab.com/__cypress/runner/cypress_runner.js:7928:5)\n    at Async.drainQueues (https://codenboxautomationlab.com/__cypress/runner/cypress_runner.js:7798:14)\nFrom Your Spec Code:\n    at Context.onFailed (https://codenboxautomationlab.com/__cypress/tests?p=cypress\\support\\index.js:2789:6)",
+                "diff": null
+              },
+              "uuid": "0fd62f5d-f495-43ce-b673-101215d6fd61",
+              "parentUUID": "0aabfc8c-2e17-49d6-a229-3656ac9164c4",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "84132f68-f089-43e6-83c1-002afa4f5d23"
+          ],
+          "failures": [
+            "0fd62f5d-f495-43ce-b673-101215d6fd61"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 4319,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

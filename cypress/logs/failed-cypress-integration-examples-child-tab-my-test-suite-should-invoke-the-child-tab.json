@@ -3,11 +3,11 @@
   "title": "should invoke the child tab",
   "suiteName": "My Test Suite",
   "testName": "My Test Suite should invoke the child tab",
-  "testError": "Timed out after waiting `7000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `7000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `cypress.json` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.",
+  "testError": "Timed out after waiting `10000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `10000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `cypress.json` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.",
   "testCommands": [
     "get #opentab",
     "invoke .removeAttr(target)",
-    "click ",
+    "click {force: true}",
     "page load --waiting for new page to load--",
     "request ",
     "request ",
@@ -42,6 +42,10 @@
     "request ",
     "request ",
     "request ",
-    "request "
+    "request ",
+    "request ",
+    "request ",
+    "request ",
+    "new url http://www.codenbox.com/"
   ]
 }

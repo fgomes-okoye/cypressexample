@@ -6,9 +6,9 @@ describe('My Test Suite', () => {
 
     cy.visit(Cypress.env('url'))
 
-    cy.wait(3000)
+    cy.wait(5000)
     cy.contains('Contact Us').scrollIntoView()
-    //cy.wait(3000)
+    //cy.wait(5000)
     cy.get('.block-editor-rich-text__editable > span').scrollIntoView()
   })
 })

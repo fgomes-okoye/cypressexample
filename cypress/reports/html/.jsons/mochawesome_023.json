@@ -1,0 +1,124 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-10-23T14:56:32.032Z",
+    "end": "2022-10-23T14:56:37.281Z",
+    "duration": 5249,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "956b9969-e0e0-4449-bec9-8b9545dd64ba",
+      "title": "",
+      "fullFile": "cypress/integration/examples/chaining_spec.js",
+      "file": "cypress/integration/examples/chaining_spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "c4090220-c166-45d9-86b6-3dc8fb28740d",
+          "title": "My Test Suite",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "visits codenbox automation site",
+              "fullTitle": "My Test Suite visits codenbox automation site",
+              "timedOut": null,
+              "duration": 3083,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// cy.visit('https://codenboxautomationlab.com/practice/')\ncy.visit(Cypress.env('url') + '/practice/'); //should check that the url is correct\ncy.url().should('include', 'codenbox');",
+              "err": {},
+              "uuid": "9a897fbd-cb0b-4193-8dfd-2be14fd00966",
+              "parentUUID": "c4090220-c166-45d9-86b6-3dc8fb28740d",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should demonstrate assertion chaining",
+              "fullTitle": "My Test Suite should demonstrate assertion chaining",
+              "timedOut": null,
+              "duration": 420,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('.page-title').should('be.visible').and('contain', 'Automation Practice');",
+              "err": {},
+              "uuid": "3fc85dff-9c18-4a6f-8c10-58354f050f5d",
+              "parentUUID": "c4090220-c166-45d9-86b6-3dc8fb28740d",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "9a897fbd-cb0b-4193-8dfd-2be14fd00966",
+            "3fc85dff-9c18-4a6f-8c10-58354f050f5d"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 3503,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

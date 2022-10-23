@@ -1,0 +1,200 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 6,
+    "passes": 6,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-10-23T14:56:20.391Z",
+    "end": "2022-10-23T14:56:27.224Z",
+    "duration": 6833,
+    "testsRegistered": 6,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "53853a1c-fc23-4554-add9-f685e04bc616",
+      "title": "",
+      "fullFile": "cypress/integration/examples/assertions.js",
+      "file": "cypress/integration/examples/assertions.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "a6de067f-ff60-4d3c-b1d1-926d936f74f4",
+          "title": "My Test Suite",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "visits codenbox automation site",
+              "fullTitle": "My Test Suite visits codenbox automation site",
+              "timedOut": null,
+              "duration": 4551,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://codenboxautomationlab.com/practice/'); //should check that the url is correct\ncy.url().should('include', 'codenbox');",
+              "err": {},
+              "uuid": "e7469fce-319c-4d02-af44-179bc4c5fa68",
+              "parentUUID": "a6de067f-ff60-4d3c-b1d1-926d936f74f4",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should check the correct element on the page",
+              "fullTitle": "My Test Suite should check the correct element on the page",
+              "timedOut": null,
+              "duration": 214,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('.page-title').should('be.visible');",
+              "err": {},
+              "uuid": "c36595c6-2268-4613-a172-3dd7093e40ec",
+              "parentUUID": "a6de067f-ff60-4d3c-b1d1-926d936f74f4",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should verify the length property",
+              "fullTitle": "My Test Suite should verify the length property",
+              "timedOut": null,
+              "duration": 27,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('.search-input').should('have.length', 2);",
+              "err": {},
+              "uuid": "21405f12-66c9-4311-9059-7eec54ec4ed6",
+              "parentUUID": "a6de067f-ff60-4d3c-b1d1-926d936f74f4",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should verify the text of an element",
+              "fullTitle": "My Test Suite should verify the text of an element",
+              "timedOut": null,
+              "duration": 35,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#openwindow').should('have.text', 'Open Window');",
+              "err": {},
+              "uuid": "271b7446-4484-49f9-bd97-d8312a887e3d",
+              "parentUUID": "a6de067f-ff60-4d3c-b1d1-926d936f74f4",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should verify that option3 is checked",
+              "fullTitle": "My Test Suite should verify that option3 is checked",
+              "timedOut": null,
+              "duration": 195,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#checkBoxOption3').check().should('be.checked');",
+              "err": {},
+              "uuid": "91dfeb42-6ad3-4dcf-b8a8-aff6b78e3904",
+              "parentUUID": "a6de067f-ff60-4d3c-b1d1-926d936f74f4",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should select Appium from the static dropdown",
+              "fullTitle": "My Test Suite should select Appium from the static dropdown",
+              "timedOut": null,
+              "duration": 234,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#dropdown-class-example').select('Appium').should('have.value', 'option2');",
+              "err": {},
+              "uuid": "61ae6751-f831-4f1a-8c25-05ca930d9138",
+              "parentUUID": "a6de067f-ff60-4d3c-b1d1-926d936f74f4",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "e7469fce-319c-4d02-af44-179bc4c5fa68",
+            "c36595c6-2268-4613-a172-3dd7093e40ec",
+            "21405f12-66c9-4311-9059-7eec54ec4ed6",
+            "271b7446-4484-49f9-bd97-d8312a887e3d",
+            "91dfeb42-6ad3-4dcf-b8a8-aff6b78e3904",
+            "61ae6751-f831-4f1a-8c25-05ca930d9138"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 5256,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

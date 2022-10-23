@@ -1,0 +1,124 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-10-23T14:56:54.450Z",
+    "end": "2022-10-23T14:57:08.611Z",
+    "duration": 14161,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "5c99a09c-c459-4a7c-bede-c50fef8e3689",
+      "title": "",
+      "fullFile": "cypress/integration/examples/childTab.js",
+      "file": "cypress/integration/examples/childTab.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "63e28712-4d7a-43a3-a1dd-0b7366cce063",
+          "title": "My Test Suite",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should visit codenbox automation site",
+              "fullTitle": "My Test Suite should visit codenbox automation site",
+              "timedOut": null,
+              "duration": 3264,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://codenboxautomationlab.com/practice/'); //should check that the url is correct\ncy.url().should('include', 'codenbox');",
+              "err": {},
+              "uuid": "8cbdc20d-d57e-43df-bbb9-9192a01fb82b",
+              "parentUUID": "63e28712-4d7a-43a3-a1dd-0b7366cce063",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should invoke the child tab",
+              "fullTitle": "My Test Suite should invoke the child tab",
+              "timedOut": null,
+              "duration": 8894,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#opentab').invoke('removeAttr', 'target').click({\n  force: true\n});",
+              "err": {},
+              "uuid": "f26c011a-24ea-4041-aa81-600a3527850e",
+              "parentUUID": "63e28712-4d7a-43a3-a1dd-0b7366cce063",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "8cbdc20d-d57e-43df-bbb9-9192a01fb82b",
+            "f26c011a-24ea-4041-aa81-600a3527850e"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 12158,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

@@ -1,0 +1,143 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-10-23T14:55:54.823Z",
+    "end": "2022-10-23T14:56:04.070Z",
+    "duration": 9247,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "53118069-139f-4590-8959-8cb52678bada",
+      "title": "",
+      "fullFile": "cypress/integration/examples/alert.js",
+      "file": "cypress/integration/examples/alert.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "55f348ad-6917-49db-a513-f93cfee84a46",
+          "title": "My Test Suite",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should visit codenbox automation site",
+              "fullTitle": "My Test Suite should visit codenbox automation site",
+              "timedOut": null,
+              "duration": 7062,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://codenboxautomationlab.com/practice/'); //should check that the url is correct\ncy.url().should('include', 'codenbox');\ncy.wait(3000);",
+              "err": {},
+              "uuid": "1c7f6217-4ba7-403c-af9b-6f0e0ae6967a",
+              "parentUUID": "55f348ad-6917-49db-a513-f93cfee84a46",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should verify alert window",
+              "fullTitle": "My Test Suite should verify alert window",
+              "timedOut": null,
+              "duration": 197,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#alertbtn').click();\ncy.on('window:alert', str => {\n  expect(str).to.equal('Hello , share this practice page who love to learn automation');\n});",
+              "err": {},
+              "uuid": "7be43e58-6aea-4459-92fc-2db854ceb718",
+              "parentUUID": "55f348ad-6917-49db-a513-f93cfee84a46",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should verify alert window",
+              "fullTitle": "My Test Suite should verify alert window",
+              "timedOut": null,
+              "duration": 127,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#confirmbtn').click();\ncy.on('window:confirm', str => {\n  expect(str).to.equal('Hello , Are you sure you want to confirm?');\n});",
+              "err": {},
+              "uuid": "31436612-0ae6-4f2e-a6cc-44f238fbdbed",
+              "parentUUID": "55f348ad-6917-49db-a513-f93cfee84a46",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "1c7f6217-4ba7-403c-af9b-6f0e0ae6967a",
+            "7be43e58-6aea-4459-92fc-2db854ceb718",
+            "31436612-0ae6-4f2e-a6cc-44f238fbdbed"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 7386,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

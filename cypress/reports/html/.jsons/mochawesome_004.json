@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-10-23T14:30:36.202Z",
+    "end": "2022-10-23T14:30:47.503Z",
+    "duration": 11301,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "42244555-8b84-43fd-862c-e8e1cbe95534",
+      "title": "",
+      "fullFile": "cypress/integration/examples/checkbox.js",
+      "file": "cypress/integration/examples/checkbox.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "0fef80c0-f274-407b-9f3d-2d63a7c648ae",
+          "title": "My Test Suite",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should be able to tick the checkbox",
+              "fullTitle": "My Test Suite should be able to tick the checkbox",
+              "timedOut": null,
+              "duration": 8717,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://codenboxautomationlab.com/practice/');\ncy.get('input#checkBoxOption1').check().should('be.checked').and('have.value', 'option1'); //unchecked option1\ncy.get('input#checkBoxOption1').uncheck().should('not.be.checked'); //multiple checkboxes using common attribute values\ncy.get('input[type=\"checkbox\"]').check(['option1', 'option2']); //dynamic dropdown\ncy.get('#autocomplete').type('can');\ncy.get('.ui-menu-item').each(($el, index, $list) => {\n  // $el is a wrapped jQuery element\n  if ($el.text() === 'Canada') {\n    cy.wrap($el).click();\n  }\n});",
+              "err": {},
+              "uuid": "4c1ab4d9-fae8-4466-a613-8dab7fd9bae2",
+              "parentUUID": "0fef80c0-f274-407b-9f3d-2d63a7c648ae",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "4c1ab4d9-fae8-4466-a613-8dab7fd9bae2"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 8717,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
