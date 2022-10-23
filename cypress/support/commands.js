@@ -30,4 +30,5 @@ Cypress.Commands.add('login', (username, password) => {
   cy.get('#user_login').type(username)
   cy.get('#user_pass').type(password)
   cy.contains('Log In').click()
-})
+}),
+  require('cypress-downloadfile/lib/downloadFileCommand')

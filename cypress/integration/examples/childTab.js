@@ -8,6 +8,6 @@ describe('My Test Suite', () => {
   })
 
   it('should invoke the child tab', () => {
-    cy.get('#opentab').invoke('removeAttr', 'target').click()
+    cy.get('#opentab').invoke('removeAttr', 'target').click({ force: true })
   })
 })

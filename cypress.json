@@ -1,9 +1,10 @@
 {
   "watchForFileChanges": false,
+  "viewportHeight": 770,
+  "viewportWidth": 1000,
+  "pageLoadTimeout": 10000,
   "chromeWebSecurity": false,
-  "viewportHeight": 900,
-  "viewportWidth": 1400,
-  "pageLoadTimeout": 7000,
+  "projectId": "d17e63",
 
   "reporter": "cypress-mochawesome-reporter",
 

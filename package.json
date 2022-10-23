@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "cy:open": "cypress open",
-    "cy:run": "cypress run"
+    "cy:run": "cypress run",
+    "cy:dashboard": "npx cypress run --record --key 07c4357e-d916-4c1a-8ab6-bbc87bdef527"
   },
   "keywords": [
     "Cypress",
@@ -19,5 +20,8 @@
     "cypress-mochawesome-reporter": "^3.2.3",
     "mocha": "^10.1.0",
     "mochawesome": "^7.1.3"
+  },
+  "dependencies": {
+    "cypress-downloadfile": "^1.2.3"
   }
 }

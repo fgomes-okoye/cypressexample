@@ -1,0 +1,8 @@
+{
+  "specName": "cypress/integration/examples/fileDownloadTest.js",
+  "title": "should download file",
+  "suiteName": "My File Download Test suite",
+  "testName": "My File Download Test suite should download file",
+  "testError": "cy.downloadFile is not a function",
+  "testCommands": []
+}

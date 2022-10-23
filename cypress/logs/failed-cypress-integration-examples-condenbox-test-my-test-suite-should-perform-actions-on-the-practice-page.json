@@ -1,0 +1,11 @@
+{
+  "specName": "cypress/integration/examples/condenboxTest.js",
+  "title": "should perform actions on the practice page",
+  "suiteName": "My Test Suite",
+  "testName": "My Test Suite should perform actions on the practice page",
+  "testError": "`cy.visit()` failed trying to load:\n\n/\n\nWe failed looking for this file at the path:\n\n/my-project/automation/CypressExample/\n\nThe internal Cypress web server responded with:\n\n  > 404: Not Found\n\nBecause this error occurred during a `before each` hook we are skipping all of the remaining tests.",
+  "testCommands": [
+    "visit /",
+    "request /"
+  ]
+}

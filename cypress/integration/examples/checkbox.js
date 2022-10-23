@@ -16,7 +16,7 @@ describe('My Test Suite', () => {
 
     //dynamic dropdown
     cy.get('#autocomplete').type('can')
-    cy.get('.ui-menu-item divFAILED').each(($el, index, $list) => {
+    cy.get('.ui-menu-item').each(($el, index, $list) => {
       // $el is a wrapped jQuery element
       if ($el.text() === 'Canada') {
         cy.wrap($el).click()
