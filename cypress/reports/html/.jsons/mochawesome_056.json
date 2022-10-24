@@ -1,0 +1,143 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-10-23T15:54:27.305Z",
+    "end": "2022-10-23T15:54:34.939Z",
+    "duration": 7634,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "610a17b6-7a29-4385-9966-d4e4d60aed77",
+      "title": "",
+      "fullFile": "cypress/integration/examples/table_spec.js",
+      "file": "cypress/integration/examples/table_spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "4b7c0d0f-ed58-45f6-a2c6-ea38c243c882",
+          "title": "My Test Suite",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should visit Codenbox automation site",
+              "fullTitle": "My Test Suite should visit Codenbox automation site",
+              "timedOut": null,
+              "duration": 4083,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://codenboxautomationlab.com/practice'); //should check for correct url\ncy.url().should('include', 'codenbox');\ncy.waitFor(3000);",
+              "err": {},
+              "uuid": "8c98a168-9472-4cdf-be21-00cef4893074",
+              "parentUUID": "4b7c0d0f-ed58-45f6-a2c6-ea38c243c882",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should verify value from anywhere within the table",
+              "fullTitle": "My Test Suite should verify value from anywhere within the table",
+              "timedOut": null,
+              "duration": 542,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('table >tbody >tr').contains('td', 'Appium').should('be.visible');",
+              "err": {},
+              "uuid": "fce3bafe-89b3-4290-99ab-479a1a112388",
+              "parentUUID": "4b7c0d0f-ed58-45f6-a2c6-ea38c243c882",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should check conditional logic in the table",
+              "fullTitle": "My Test Suite should check conditional logic in the table",
+              "timedOut": null,
+              "duration": 475,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('table >tbody >tr  td:nth-child(2)').each(($el, index, $list) => {\n  let text = $el.text();\n  if (text.includes('WebServices')) {\n    cy.get('table >tbody >tr  td:nth-child(3)').eq(index).then(function (price) {\n      let actualPrice = price.text();\n      expect(actualPrice.trim()).to.equal('30');\n    });\n  }\n});",
+              "err": {},
+              "uuid": "f6e11c04-7542-4be0-8b69-31db78c18125",
+              "parentUUID": "4b7c0d0f-ed58-45f6-a2c6-ea38c243c882",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "8c98a168-9472-4cdf-be21-00cef4893074",
+            "fce3bafe-89b3-4290-99ab-479a1a112388",
+            "f6e11c04-7542-4be0-8b69-31db78c18125"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 5100,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

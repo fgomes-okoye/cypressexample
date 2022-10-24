@@ -1,0 +1,143 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-10-23T15:51:04.393Z",
+    "end": "2022-10-23T15:51:10.855Z",
+    "duration": 6462,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "60d62400-5d90-492f-b412-25a0c0dbb22c",
+      "title": "",
+      "fullFile": "cypress/integration/examples/alias.js",
+      "file": "cypress/integration/examples/alias.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "7264d603-0aae-4c38-9590-9f06276a7368",
+          "title": "My Test Suite",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Visits Codenbox automation site",
+              "fullTitle": "My Test Suite Visits Codenbox automation site",
+              "timedOut": null,
+              "duration": 3756,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://codenboxautomationlab.com/wp-login.php');\ncy.wait(3000);",
+              "err": {},
+              "uuid": "41c19ef7-32ff-411f-b87b-d05c0cabf164",
+              "parentUUID": "7264d603-0aae-4c38-9590-9f06276a7368",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should fill invalid username",
+              "fullTitle": "My Test Suite should fill invalid username",
+              "timedOut": null,
+              "duration": 524,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#user_login').as('username');\ncy.get('@username').clear();\ncy.get('@username').type('NoName', {\n  delay: 50\n});",
+              "err": {},
+              "uuid": "15dc96ca-1dce-448d-b681-899f1077788b",
+              "parentUUID": "7264d603-0aae-4c38-9590-9f06276a7368",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should fill invalid password",
+              "fullTitle": "My Test Suite should fill invalid password",
+              "timedOut": null,
+              "duration": 635,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#user_pass').as('password');\ncy.get('@password').clear();\ncy.get('@password').type('1234567', {\n  delay: 50\n});",
+              "err": {},
+              "uuid": "8f6fc335-384f-4f17-88d9-3cff207ac12c",
+              "parentUUID": "7264d603-0aae-4c38-9590-9f06276a7368",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "41c19ef7-32ff-411f-b87b-d05c0cabf164",
+            "15dc96ca-1dce-448d-b681-899f1077788b",
+            "8f6fc335-384f-4f17-88d9-3cff207ac12c"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4915,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

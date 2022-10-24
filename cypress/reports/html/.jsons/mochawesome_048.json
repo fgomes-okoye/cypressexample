@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-10-23T15:52:52.012Z",
+    "end": "2022-10-23T15:52:59.440Z",
+    "duration": 7428,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "c3141161-03ff-43b7-bf84-5417e0089d24",
+      "title": "",
+      "fullFile": "cypress/integration/examples/dopdown.js",
+      "file": "cypress/integration/examples/dopdown.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "a5ad2958-ca37-4bfd-a082-370c4a306e24",
+          "title": "My Test Suite",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should visit Codenbox automation site",
+              "fullTitle": "My Test Suite should visit Codenbox automation site",
+              "timedOut": null,
+              "duration": 5738,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://codenboxautomationlab.com/practice/'); //static dropdown\ncy.get('#dropdown-class-example').select('Selenium').should('have.value', 'option1'); //dynamic dropdown\ncy.get('#autocomplete').type('can');\ncy.get('.ui-menu-item div').each(($el, index, $list) => {\n  // $el is a wrapped jQuery element\n  if ($el.text() === 'Canada') {\n    cy.wrap($el).click();\n  }\n});",
+              "err": {},
+              "uuid": "0caa5446-05b3-42ac-8c10-c866274652e9",
+              "parentUUID": "a5ad2958-ca37-4bfd-a082-370c4a306e24",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "0caa5446-05b3-42ac-8c10-c866274652e9"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 5738,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

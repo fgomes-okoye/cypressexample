@@ -5,6 +5,8 @@
   "pageLoadTimeout": 10000,
   "chromeWebSecurity": false,
   "projectId": "d17e63",
+  "testFiles": "**/*.feature",
+  "ignoreTestFiles": ["*.js", "*.md"],
 
   "reporter": "cypress-mochawesome-reporter",
 

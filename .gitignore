@@ -1,4 +1,3 @@
-\node_modules\
 .vscode\
 \dist
 \cypress\screenshots
@@ -6,3 +5,4 @@
 reports-multihtml
 \cypress\logs
 \mydownloads
+node_modules

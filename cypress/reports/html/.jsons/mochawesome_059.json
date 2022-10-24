@@ -1,0 +1,144 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 1,
+    "failures": -1,
+    "start": "2022-10-23T15:55:10.768Z",
+    "end": "2022-10-23T15:55:19.507Z",
+    "duration": 8739,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 33.33333333333333,
+    "other": 1,
+    "hasOther": true,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "09ae2736-5046-4e5d-b41e-40d6566dc185",
+      "title": "",
+      "fullFile": "cypress/integration/examples/wait.js",
+      "file": "cypress/integration/examples/wait.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "5235b8a9-d6ab-4356-91a0-24da01f86ce7",
+          "title": "My Test Suite",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should visit Codenbox automation site using wait",
+              "fullTitle": "My Test Suite should visit Codenbox automation site using wait",
+              "timedOut": null,
+              "duration": 6933,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://codenboxautomationlab.com/practice/');\ncy.url().should('include', 'codenbox');\ncy.wait(3000);",
+              "err": {},
+              "uuid": "a4546fee-fbd1-482b-ae01-d8bac8eba442",
+              "parentUUID": "5235b8a9-d6ab-4356-91a0-24da01f86ce7",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should pause the execution here",
+              "fullTitle": "My Test Suite should pause the execution here",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "",
+              "err": {},
+              "uuid": "5b8db2f9-bc4e-46f5-ad00-b10a77c9c7af",
+              "parentUUID": "5235b8a9-d6ab-4356-91a0-24da01f86ce7",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should check for the correct element on the page",
+              "fullTitle": "My Test Suite should check for the correct element on the page",
+              "timedOut": null,
+              "duration": 102,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('.page-title').should('be.visible');",
+              "err": {},
+              "uuid": "f11ab3b6-79e3-4645-8857-a96b8e004d55",
+              "parentUUID": "5235b8a9-d6ab-4356-91a0-24da01f86ce7",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "a4546fee-fbd1-482b-ae01-d8bac8eba442",
+            "f11ab3b6-79e3-4645-8857-a96b8e004d55"
+          ],
+          "failures": [],
+          "pending": [
+            "5b8db2f9-bc4e-46f5-ad00-b10a77c9c7af"
+          ],
+          "skipped": [],
+          "duration": 7035,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
