@@ -1,7 +1,6 @@
-/// <reference types="cypress" />
 import { Given, When, Then, And } from 'cypress-cucumber-preprocessor/steps'
 
-Given('I successfully land on the Home page', () => {
+Given('I successfully land on the Application', () => {
   cy.visit('https://codenboxautomationlab.com/')
   cy.url().should('include', 'codenbox')
 })
@@ -12,11 +11,11 @@ When('I click on the Practice button', () => {
   })
 })
 
-Then('I see the title of the page is {string}', pageTitle => {
+Then('I can see the page title is {string}', pageTitle => {
   cy.get('.page-title')
     .invoke('text')
     .then(text1 => {
-      expect(text1.trim()).to.equal('Automation Practice')
+      expect(text1.trim()).to.equal(pageTitle)
     })
 })
 
@@ -24,7 +23,7 @@ When('I click on the static dropdown option', () => {
   cy.get('#dropdown-class-example').select('Selenium')
 })
 
-Then('I should be able to select Selenium option', () => {
+Then('I can select Selenium option', () => {
   cy.get('#dropdown-class-example')
     .select('Selenium')
     .should('have.value', 'option1')
